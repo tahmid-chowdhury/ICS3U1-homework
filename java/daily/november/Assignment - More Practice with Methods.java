@@ -11,8 +11,8 @@ public class MethodsPractice {
 
 	//runs methods
 	public static void main(String[] args) {
-		largest(2.4, 6.4, 4.9);
-		LCM(24, 12);
+		System.out.println(largest(2.4, 6.4, 4.9));
+		System.out.println(LCM(24, 12));
 		date();
 	}
 	
@@ -59,55 +59,24 @@ public class MethodsPractice {
 	public static void date() {
 		Scanner sc = new Scanner (System.in);
 		
-		int day1 = 0;
-		int month1 = 0;
-		int day2 = 0;
-		int month2 = 0;
+		int day1 = 2;
+		int month1 = 2;
+		int day2 = 2;
+		int month2 = 2;
 		String result;
 		
-		while (day1 > 31 && day1 < 1)
-		{
-			System.out.println("Enter today's date in numbers");
-			day1 = sc.nextInt();
-			if (day1 > 31 && day1 < 1)
-			{
-				break;
-			}
-			System.out.println("Try again...");
-		}
+		System.out.println("Enter today's date in numbers: ");
+		day1 = sc.nextInt();
 		
-		while (month1 > 12 && month1 < 1)
-		{
-			System.out.println("Enter the month in numbers");
-			month1 = sc.nextInt();
-			if (month1 > 12 && month1 < 1)
-			{
-				break;
-			}
-			System.out.println("Try again...");
-		}
+		System.out.println("Enter the month in numbers: ");
+		month1 = sc.nextInt();
 		
-		while (day2 > 31 && day2 < 1)
-		{
-			System.out.println("Enter today's date in numbers");
-			day2 = sc.nextInt();
-			if (day2 > 31 && day2 < 1)
-			{
-				break;
-			}
-			System.out.println("Try again...");
-		}
+		System.out.println("Enter another date in numbers: ");
+		day2 = sc.nextInt();
 		
-		while (month2 > 12 && month2 < 1)
-		{
-			System.out.println("Enter the month in numbers");
-			month2 = sc.nextInt();
-			if (month2 > 12 && month2 < 1)
-			{
-				break;
-			}
-			System.out.println("Try again...");
-		}
+		System.out.println("Enter the month in numbers: ");
+		month2 = sc.nextInt();
+		
 		
 		if (month1 > month2)
 		{
