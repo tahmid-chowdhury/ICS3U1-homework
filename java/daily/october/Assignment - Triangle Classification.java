@@ -18,7 +18,7 @@ public class Assignment_Triangles {
 		int c = 1;
 		
 		while (a != 0 && b != 0 && c != 0) {
-			System.out.println("Provide three side lengths – 0 0 0 to terminate.");
+			System.out.println("Provide three side lengths â€“ 0 0 0 to terminate.");
 			a = sc.nextInt();
 			b = sc.nextInt();
 			c = sc.nextInt();
